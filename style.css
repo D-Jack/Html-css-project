@@ -1,0 +1,234 @@
+body, ul, li, h2, a
+{
+    margin:0;
+    font-family:'Times New Roman', Times, serif;
+    padding:0;
+} 
+ 
+body blockquote
+{
+    
+    text-align: center;
+    font-style: italic; 
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.small
+{
+    font-size: small;
+}
+
+div li
+{
+    list-style-type: circle;
+    
+    
+}
+
+.list{
+    list-style-type: upper-roman;
+    background-color: whitesmoke ;
+    margin-right: 0%;
+}
+
+.banner
+{
+    font-size: 16px;
+    /* position: initial;
+    top: 9.8px;
+    left:0px;
+    right: 0px; */
+}
+.banner .head
+{
+    position: absolute;
+    top: 20%;
+    left:60%;
+    /* background-color: rgb(235, 222, 45); */
+    text-align: center;
+    /* padding: 50px; */
+    
+    
+}
+.banner h2 
+{
+    color: rgb(41, 41, 41);
+}
+section h2 span
+{
+    font-size: 1.3em;
+    font-style: oblique;
+    font-weight: bold;
+    color: black;
+}
+
+section img.backgroundimg{
+    position: relative;
+    max-width: 100%;
+
+}
+
+header
+{
+    position: fixed;
+    font-size: 18px;
+    text-align: center;
+    z-index: 1;
+    
+    top:0;
+    left:0;
+    padding:12px;
+   
+    width:100%;
+    background-color: rgb(126, 126, 126);
+}
+header h1
+{
+    color: white;
+    border:  3px solid white;
+    padding: 1px 8px ;
+    border-radius: 23px;
+    display: inline-block;
+    margin:5px;
+}
+nav
+{
+    background-color: lightgray;
+    padding:20px;
+    position: sticky;
+    top:80px;
+}
+nav ul
+{
+    text-align:center;
+    white-space: nowrap;  
+    max-width: 1200px;
+    margin: 0px auto;  
+}
+nav li
+{
+    width:33%;
+    display: inline-block;
+    list-style-type: none;
+}
+nav li a {
+    text-decoration: none;
+    color:#4b4b4b;
+}
+nav li a.Join
+{
+    color:rgb(255, 85, 85);
+    font-weight: bold;
+}
+main
+{
+    max-width: 100%;
+    width:1200px;
+    margin: 80px auto;
+    padding:0 40px;
+    box-sizing: border-box;
+}
+.image2
+{
+    max-width:100%;
+}
+article h2{
+    color: #e02d2d;
+    font-size: 40px;
+}
+article p
+{
+    line-height: 2em;
+    color: #4b4b4b;
+}
+ .imageul
+{
+    text-align: center;
+    margin:50px 0;
+    padding: 0 200px;
+    white-space: nowrap;
+}
+ .imageul li
+{
+    background-color: lightgrey;
+    padding: 4px;
+    display:inline-block;
+    width: 40%;
+    height:40%;
+    margin:20px 5%;
+}
+.imageul li img
+{
+    max-width: 100%;
+    display:block;
+    /* note this when display is block the 
+    white baseline is gone due to img being a inline */
+}
+section.Join
+{
+    background:#f4f4f4bb;
+    text-align:center;
+    color:#4b4b4b;
+    padding:60px 20px;
+}
+.Join h2
+{
+    font-size: 32px;
+}
+.Join form input
+{
+    margin:20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px rgb(255, 255, 255) solid;
+}
+footer
+{
+    background: #4b4b4b;
+    text-align: center;
+    padding:10px;
+    color:white;
+}
+.form2
+{
+    position: relative;
+    top:130px;
+}
+/* pseudo class */
+nav li a:hover
+{
+    text-decoration: underline ;
+    
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
+    padding :4px;
+    
+}
+.imageul li:hover
+{
+    position: relative;
+    top:-5px;
+}
+.Join form input:focus{
+    outline: none;
+    border: 3px dashed #4b4b4b;
+}
+.Join form input:valid
+{
+    border:3px solid #71d300;
+}
+/* pseudo element with :: */
+p::first-letter
+{
+    font-size: 1.5em;
+}
+p::selection
+{
+    background-color: lightgreen;
+    color:orangered;
+}
+p::after
+{
+    content: "...";
+}

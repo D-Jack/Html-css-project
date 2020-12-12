@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Fill Up </title>
+    </head>
+    <body>
+        <header>
+            <p class='head'>Ahoy, matey <br>Here is a form Fill it Up to get more
+                thrilling adventure in Html,CSS .</p>
+            <!-- <p class='head'>I am <strong>Siddharth</strong></p> -->
+        </header>
+        
+        <form class="form2">
+            <label for="Name">Write your name:</label>
+            <input type="text" id="Name" name="Name" placeholder="your name" required>
+            <br>
+            <br>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" placeholder="email here" required>
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="your password">
+            <br>
+            <br>
+            <label for="gender">Select  your gender :</label>
+            <br>
+            <br>
+            <input type="radio" id="Male" value="male" name="gender" required>
+            <label for="Male" >Male</label>
+            <input type="radio" id="Female" value="female" name="gender">
+            <label for="Female" >Female</label>
+            <input type="radio" id="Other" value="other" name="gender">
+            <label for="Other" >other</label>
+            <br><br>
+            <label for="ques">select your secret ques</label>
+            <select name="ques" id="ques">
+                <option value="favflower">What is your favourite flower</option>
+                <option value="favbuddy">Who is your fav buddy</option>
+                <option value="favdog">what is your fav dog name</option>
+            </select>
+            <label for="answer">Write your answer:</label>
+            <input type="text" name="answer" id ="answer" required placeholder="answer to your ques">
+            <br><br>
+            <label for="bio">write about yourself </label>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="write your bio"></textarea>
+            <br><br>
+            <input type="submit" value="Submit Form">
+        </form>
+    </body>
+</html>
